@@ -16,6 +16,10 @@ You can generate a video using DreamPose using our pretrained models.
     ```
     python test.py --epoch 499 --folder demo/custom-chkpts --pose_folder demo/sample/poses  --key_frame_path demo/sample/key_frame.png --s1 8 --s2 3 --n_steps 100 --output_dir demo/sample/results --custom_vae demo/custom-chkpts/vae_1499.pth
     ```
+Here is the final output video:
+
+![Demo Result](media/demo.gif "Demo Result")
+
 ## Data Preparation
 
 To prepare a sample for finetuning, create a directory containing train and test subdirectories containing the train frames (desired subject) and test frames (desired pose sequence), respectively. Note that the test frames are not expected to be of the same subject. See demo/sample for an example. 
